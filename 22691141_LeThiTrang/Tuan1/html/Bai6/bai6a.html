@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    .wrapper{
+        height: 750px;
+        width: 750px;
+        padding: 0px auto;
+        background-color: rgb(155, 205, 255);
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <center>
+            <img src="./img/bai06a.png" style="padding: 10px;" >
+            <h1>Registration Form</h1>
+            <p>Register your Jackson Electronics product here</p>
+            <form name="Registration">
+                <table>
+                   <tr>
+                        <td> First Name:</td>
+                        <td colspan="2"><input type="text" name="First Name" size="15"> LastName: <input type="text" size="15"</td>
+                    </tr>
+                    <tr>
+                        <td>Address #1:</td>
+                        <td colspan="2"><input name="Address1" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Address #2:</td>
+                        <td colspan="2"><input name="Address2" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td colspan="2"><input name="City"> State: <input name="State" size="2"> Zip: <input name="ZIP" size="8"></td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td colspan="2"><input name="Country" value="United States"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>Product:</td>
+                    <td colspan="2">
+                        <select name="Product">
+                        <option value="Product"> ScanMaster </option>
+                        <option value="Product"> Print-02620</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Purchased:</td>
+                    <td colspan="2"><input type="text" name="Date"></td>
+                </tr>
+                <tr>
+                    <td>Serial #:</td>
+                    <td colspan="2"><input type="number" name="Serial"></td>
+                </tr>
+                <tr>
+                    <td valign="top">Used for:</td>
+                    <td valign="top">
+                        <input type="radio" name="Used" value="Home">Home
+                        <br>
+                        <input type="radio" name="Used" value="Business" checked="checked">Business
+                        <br>
+                        <input type="radio" name="Used" value="Government">Government
+                    </td>
+                    <td valign="top">
+                        <input type="radio" name="Used" value="Educational">Educational Institution
+                        <br>
+                        <input type="RADIO" name="Used" value="Other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">System (check all that apply): </td>
+                    <td>
+                        <input type="checkbox" name="WIN9598NT">Windows 95/98/NT
+                    <br>
+                        <input type="checkbox" name="WINDOS">Windows 3.x/DOS
+                    <br>
+                        <input type="checkbox" name="MAC">Macintosh
+                    </td>
+                    <td valign="top"><input type="CHECKBOX" name="UNIX">UNIX<br><input type="checkbox" name="Other">Other</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"> Comments?: </td>
+                    <td colspan="2"><textarea rows="6" cols="45" ></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button> Click to Register </button> <button> Click to cancel </button></td>
+                </tr>
+         
+    
+        
+                </table>
+            </form>
+        </center>
+    </div>
+    
+</body>
+</html>
