@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0px;
+        margin: 0px auto;
+    }
+    .wrapper{
+        background-image: linear-gradient( #7496c6, #3c7bc3) ;
+        width: 900px;
+        height: 500px;
+    }
+    header {
+        position:relative;
+        width: 900px;
+        height: 50px;
+        border-bottom: 2px dashed white;
+    }
+    header h1 {
+        position:absolute;
+        font-family: arial;
+        top: 5px; 
+        right: 15px;
+        color: white;
+        text-shadow: 0px 0px 20px rgb(0, 0, 145);
+
+    }
+    nav {
+        position: absolute;
+        left: 10px;
+    }
+    .menu lI {
+        
+        display: inline-table;
+        height: 50px;
+        padding-left: 30px;
+        padding-right: 10px;
+        margin: 5px;
+        line-height: 40px;
+    }
+    
+    .menu li a {
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    
+    .content {
+        width: 900px;
+        height: 400px;
+      
+
+    }
+    .content-left{
+        width: 500px;
+        height: 400px;
+       
+        float:left
+    }
+    .content-left h2 {
+        color: white;
+        margin: 5px;
+        margin-top: 20px;
+        
+    }
+    .content-left p {
+        color: white;
+        margin: 5px;
+        margin-top: 20px;
+    }
+    .content-left table{
+        padding-top: 10px;
+
+    }
+    .content-left table label {
+        color: white;
+        
+    }
+   
+    .content-left table textarea  {
+        border-radius: 4px;
+    }
+    .content-left table select  {
+        border-radius: 4px;
+    }
+ 
+    
+    
+
+    .content-right{
+        width: 400px;
+        height: 400px;
+      
+        float:left;
+        color:blue;
+        position:relative
+    }
+    .content-right img {
+        position:absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .content-right h2 {
+        position:absolute;
+        bottom: 70px;
+        left: 60px;
+        text-shadow: 1px 2px 0 ;
+    }
+    .content-right h4 {
+        position:absolute;
+        bottom: 50px;
+        left: 80px;
+    }
+   
+    footer {
+        width: 900px;
+        height: 60px;
+        color: white;
+        border-top: 2px dashed white;
+        text-align: center;
+        
+        
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Sky World</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <div class="content">
+            <div class="content-left">
+                <h2>Registration Information</h2>
+                <p>Start your travel planning now with our on-line tour regstration
+                    form. Just tell us a little about yourself and your group and one of our travel
+                    experts will contact  you  to create the perfect custom built for your group's needs .
+                    Your've arrived.
+                </p>
+               
+                <form action="" class="inner-input">
+                    <table>
+                  
+                        
+                        <tr> 
+                            <td><label for="Title">Title:</label></td> 
+                           <td><select id="Title"> 
+                                <option value="abc">Mr</option>
+                                <option value="abd">Ms</option>
+                            </select>
+                        </td> 
+                        </tr> 
+                       <tr>
+                           <td><label for="Fullname">Full Name:</label></td> 
+                           <td> <input type="text" size="34" id="name" name="name" placeholder="FirstName"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="mail">MailingAddress:</label></td>
+                          <td><input type="text" size="34" id="mail" name="mail" placeholder="MailingAddress"></td>  
+                        </tr>
+                        <tr>
+                          <td><label for="Cyti">City:</label></td>  
+                           <td> <input type="text" size="34" id="city" name="city" placeholder="City"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Country">Country:</label></td>  
+                             <td> <input type="text" size="34" id="Country" name="Country" placeholder="Country"></td>
+                          </tr>
+                  
+                       <tr>
+                        <td><label for="Mess"><p>Specific questions or</p> requests about your tour:</label></td>   
+                        <td><textarea name="Mess" id="Mess" cols="30" rows="5" placeholder="Specific questions or requests about your tour"></textarea></td>  
+                          
+                          </tr>
+                          <tr>
+                            <td></td>
+                         
+                            <td><input id="Submit" type="Submit" value="Submit">
+                                <input id="Submit" type="Submit" value="Reset"></td>
+                          </tr>
+                        </table>
+                    
+                    
+                </form>
+            </div>
+            
+            <div class="content-right">
+                <img src="./sky.png" alt="" srcset="" width="320" height="240">
+                <h2>Your've arrived.</h2>
+                <h4>Journeys as great as the destinations.</h4>
+            </div> 
+        </div>
+        <footer>
+            <p>2016 Sky World Tours. All rights reserved.
+            </p>
+            <p>Contact information: Student Name | StudentID | Testing Date</p>
+        </footer>
+     
+    </div>
+</body>
+</html>
