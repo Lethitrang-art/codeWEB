@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px auto;
+        padding: 0px;
+    }
+    
+    .wrapper {
+        width: 789px;
+        position: relative;
+    }
+    
+    h1 {
+        padding-top: 10px;
+        margin: 10px;
+        position: absolute;
+        right: 200px;
+    }
+    
+    table {
+        top: 70px;
+        position: absolute;
+        left: 270px;
+    }
+    
+    tr {
+        line-height: 30px;
+        text-indent: 5px;
+    }
+    
+    th {
+        text-indent: 1px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h1>THÔNG TIN ĐĂNG NHẬP</h1>
+        <table width=250 border="1">
+            <tr>
+                <th colspan="2">THÔNG TIN</th>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td id="us">AAAA</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td id="pw">BBBB</td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td id="gen">DDDD</td>
+            </tr>
+            <tr>
+                <td>Đồ uống bạn chọn</td>
+                <td id="cf">CCCC</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var username = localStorage.getItem("us");
+        var password = localStorage.getItem("pw");
+        var gender = localStorage.getItem("gen");
+        var cafe = localStorage.getItem("cf");
+
+        document.getElementById("us").innerHTML = username
+        document.getElementById("pw").innerHTML = password
+        document.getElementById("gen").innerHTML = gender
+        document.getElementById("cf").innerHTML = cafe
+    </script>
+</body>
+
+</html>
